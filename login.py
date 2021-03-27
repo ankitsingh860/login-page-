@@ -31,7 +31,7 @@ def login():
             return redirect(url_for('home'))
         else:
             msg = 'Incorrect username or password!'
-    return render_template('index.html', msg=msg)
+    return render_template('login.html', msg=msg)
 
 @app.route('/logout/')
 def logout():
